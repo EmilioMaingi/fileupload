@@ -1,11 +1,14 @@
-//processing  single image
-
 //initialize 
-$newfile = new Image();
-$newfile->processImage(array('imagename'), 'foldername/');
+$newfile = new File();
+$newfile->processFile(array('filename'), 'foldername/');
+
+//check if file has passed validation of size and type
 
 //move file from temporary location to your folder name
-$newfile->moveImage(0)
+$newfile->moveFile(0)
 
-//getting url to save in db field
-$url = $images->getURL(0),
+//getting url to save in db field, save $url to db
+$url = $newfile->getURL(0),
+
+//retrieving file, get saved link from db
+<a class="btn btn-block rounded-0" target="_blank" href="SAVEDLINK">view file</a>
