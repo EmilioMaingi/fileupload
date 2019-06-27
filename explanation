@@ -1,0 +1,11 @@
+//processing  single image
+
+//initialize 
+$newfile = new Image();
+$newfile->processImage(array('imagename'), 'foldername/');
+
+//move file from temporary location to your folder name
+$newfile->moveImage(0)
+
+//getting url to save in db field
+$url = $images->getURL(0),
